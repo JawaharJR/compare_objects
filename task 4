@@ -1,0 +1,10 @@
+var obj1={name:"person1",age:5}
+var obj2={age:5,name:"person1",}
+
+const obj1Length= Object.keys(obj1).length
+let count=0
+for (key in obj1) {
+    if(obj2[key]===(obj1[key])) count++
+}
+if(count===obj1Length) console.log ("objects are equal");
+else console.log ("objects are not equal");
